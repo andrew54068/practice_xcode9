@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="selectionView" customModule="practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xi-oS-dpo">
+                    <rect key="frame" x="15" y="12" width="161.5" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="zNM-oS-lX3"/>
+                    </constraints>
+                    <state key="normal" title="All congress"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koj-j0-eXQ">
+                    <rect key="frame" x="198.5" y="12" width="161.5" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="BGC-7p-vfU"/>
+                    </constraints>
+                    <state key="normal" title="right"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7xi-oS-dpo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="9hV-f1-hME"/>
+                <constraint firstAttribute="bottom" secondItem="7xi-oS-dpo" secondAttribute="bottom" constant="11" id="Djl-ox-udl"/>
+                <constraint firstItem="7xi-oS-dpo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="DmT-k4-FKF"/>
+                <constraint firstAttribute="trailing" secondItem="koj-j0-eXQ" secondAttribute="trailing" constant="15" id="RTu-GG-rXG"/>
+                <constraint firstAttribute="bottom" secondItem="koj-j0-eXQ" secondAttribute="bottom" constant="11" id="VjY-s1-yvk"/>
+                <constraint firstItem="koj-j0-eXQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="aBR-MN-dpE"/>
+                <constraint firstItem="koj-j0-eXQ" firstAttribute="width" secondItem="7xi-oS-dpo" secondAttribute="width" id="bVk-Cp-v3k"/>
+                <constraint firstItem="7xi-oS-dpo" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" priority="900" constant="-15" id="q6k-Aw-vcJ"/>
+                <constraint firstItem="koj-j0-eXQ" firstAttribute="leading" secondItem="7xi-oS-dpo" secondAttribute="trailing" constant="22" id="vgc-n8-Wea"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="betweenTwoConstraint" destination="vgc-n8-Wea" id="oPc-el-4Pc"/>
+                <outlet property="equalWidthConstraint" destination="bVk-Cp-v3k" id="nTT-wQ-kMR"/>
+                <outlet property="left" destination="7xi-oS-dpo" id="Ans-cR-RUP"/>
+                <outlet property="right" destination="koj-j0-eXQ" id="pWJ-fo-YHf"/>
+                <outlet property="trailingConstraint" destination="q6k-Aw-vcJ" id="acG-qE-mUT"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticleIntroView" customModule="RocheCIT_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="fieldLabel" destination="cGE-nH-yG1" id="uEI-Gw-siv"/>
+                <outlet property="introTitleLabel" destination="iQq-W4-biu" id="EVf-qT-FKh"/>
+                <outlet property="timeLabel" destination="w5f-NL-WgS" id="vzq-fe-JNk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="1wa-Xt-tkk"/>
+                <outlet property="viewsLabel" destination="UuL-mt-N35" id="WqP-jh-qhX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary analysis from OAK,  randomized phase III study comparing atezoizumab with docetxel in Advanced NSCLC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQq-W4-biu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.10.10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5f-NL-WgS">
+                    <rect key="frame" x="28" y="639" width="62" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISEASE / Alzhemer's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-nH-yG1">
+                    <rect key="frame" x="118" y="639" width="132.5" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_indicate_clock" translatesAutoresizingMaskIntoConstraints="NO" id="WZs-0U-xzQ">
+                    <rect key="frame" x="0.0" y="639" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="HXF-f8-p3n"/>
+                        <constraint firstAttribute="width" constant="28" id="e0G-VW-1Iq"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_indicate_tag" translatesAutoresizingMaskIntoConstraints="NO" id="OXJ-F3-A86">
+                    <rect key="frame" x="90" y="639" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="E7P-vH-Iae"/>
+                        <constraint firstAttribute="width" constant="28" id="cYK-iM-rgz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234 Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuL-mt-N35">
+                    <rect key="frame" x="311.5" y="639" width="63.5" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OXJ-F3-A86" firstAttribute="height" secondItem="w5f-NL-WgS" secondAttribute="height" id="2M3-HJ-Smm"/>
+                <constraint firstItem="UuL-mt-N35" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cGE-nH-yG1" secondAttribute="trailing" constant="5" id="3WP-tG-nSv"/>
+                <constraint firstItem="cGE-nH-yG1" firstAttribute="leading" secondItem="OXJ-F3-A86" secondAttribute="trailing" id="40y-iH-M86"/>
+                <constraint firstAttribute="trailing" secondItem="iQq-W4-biu" secondAttribute="trailing" id="5hi-0u-4do"/>
+                <constraint firstItem="UuL-mt-N35" firstAttribute="height" secondItem="cGE-nH-yG1" secondAttribute="height" id="D2l-VT-hoo"/>
+                <constraint firstItem="OXJ-F3-A86" firstAttribute="leading" secondItem="w5f-NL-WgS" secondAttribute="trailing" id="K5h-26-yBY"/>
+                <constraint firstItem="w5f-NL-WgS" firstAttribute="height" secondItem="WZs-0U-xzQ" secondAttribute="height" id="MYQ-fU-LkO"/>
+                <constraint firstItem="iQq-W4-biu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Uwy-8J-j86"/>
+                <constraint firstAttribute="bottom" secondItem="WZs-0U-xzQ" secondAttribute="bottom" id="V55-KQ-hwN"/>
+                <constraint firstItem="iQq-W4-biu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VHz-C1-sCO"/>
+                <constraint firstItem="UuL-mt-N35" firstAttribute="top" secondItem="cGE-nH-yG1" secondAttribute="top" id="b8b-rz-DjU"/>
+                <constraint firstAttribute="trailing" secondItem="UuL-mt-N35" secondAttribute="trailing" id="ch8-JT-fHh"/>
+                <constraint firstItem="cGE-nH-yG1" firstAttribute="height" secondItem="OXJ-F3-A86" secondAttribute="height" id="dPG-Xb-i3q"/>
+                <constraint firstItem="cGE-nH-yG1" firstAttribute="top" secondItem="OXJ-F3-A86" secondAttribute="top" id="dyv-Yo-O0S"/>
+                <constraint firstItem="WZs-0U-xzQ" firstAttribute="top" secondItem="iQq-W4-biu" secondAttribute="bottom" constant="10" id="gxd-KK-N4R"/>
+                <constraint firstItem="WZs-0U-xzQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mV3-do-pNR"/>
+                <constraint firstItem="w5f-NL-WgS" firstAttribute="top" secondItem="WZs-0U-xzQ" secondAttribute="top" id="rFU-ej-icj"/>
+                <constraint firstItem="OXJ-F3-A86" firstAttribute="top" secondItem="w5f-NL-WgS" secondAttribute="top" id="sZm-oH-JGv"/>
+                <constraint firstItem="w5f-NL-WgS" firstAttribute="leading" secondItem="WZs-0U-xzQ" secondAttribute="trailing" id="trN-Fs-gGX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="7.5" y="26.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_indicate_clock" width="28" height="28"/>
+        <image name="icon_indicate_tag" width="28" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="searchTab_CVCell" reuseIdentifier="searchTab_CVCell" id="gTV-IL-0wX" customClass="SearchTab_CVCell" customModule="practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFf-E4-Z8w">
+                        <rect key="frame" x="0.0" y="43" width="100" height="2"/>
+                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="QKT-Gj-ZKc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L20-s9-xzg" userLabel="tab">
+                        <rect key="frame" x="0.0" y="13.5" width="100" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="fse-zV-OmO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NFf-E4-Z8w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2dp-7H-Oan"/>
+                <constraint firstAttribute="bottom" secondItem="NFf-E4-Z8w" secondAttribute="bottom" id="3sK-fb-vr6"/>
+                <constraint firstItem="L20-s9-xzg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="759-DQ-MZj"/>
+                <constraint firstItem="L20-s9-xzg" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="7kc-cG-zN8"/>
+                <constraint firstItem="L20-s9-xzg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZHn-zr-rwo"/>
+                <constraint firstAttribute="trailing" secondItem="NFf-E4-Z8w" secondAttribute="trailing" id="bn7-Ra-iJf"/>
+            </constraints>
+            <size key="customSize" width="50" height="57"/>
+            <connections>
+                <outlet property="highlightView" destination="NFf-E4-Z8w" id="iPP-ZJ-9Uq"/>
+                <outlet property="tabName" destination="L20-s9-xzg" id="22Y-Vz-jNX"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="116.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

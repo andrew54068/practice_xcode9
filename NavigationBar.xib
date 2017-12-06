@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationController" customModule="practice" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="NavigationBar" customModule="practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roche_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-bG-s9p">
+                    <rect key="frame" x="159.5" y="8" width="55" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="I1y-AA-zdS"/>
+                        <constraint firstAttribute="width" constant="55" id="TCZ-pY-9Jk"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ot-mO-ZsU" userLabel="bookmark">
+                    <rect key="frame" x="347" y="12" width="16" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="SJF-BS-1de"/>
+                        <constraint firstAttribute="height" constant="20" id="yGA-zS-1B4"/>
+                    </constraints>
+                    <state key="normal" image="icon_btn_bookmark_default"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ld-J3-gYQ" userLabel="search">
+                    <rect key="frame" x="309" y="9" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="Trd-Oz-Xnc"/>
+                        <constraint firstAttribute="width" constant="26" id="rOw-er-6h1"/>
+                    </constraints>
+                    <state key="normal" image="icon_btn_search_default"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtt-Om-6ab" userLabel="menu">
+                    <rect key="frame" x="12" y="8" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="HMI-b4-PQ3"/>
+                        <constraint firstAttribute="width" constant="28" id="X7U-4U-mZm"/>
+                    </constraints>
+                    <state key="normal" image="icon_btn_menu_default"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tBd-bG-s9p" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="DK4-bz-fc7"/>
+                <constraint firstItem="7Ot-mO-ZsU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Es6-1V-7Ym"/>
+                <constraint firstItem="7Ot-mO-ZsU" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="-12" id="J0e-2Q-TRm"/>
+                <constraint firstItem="tBd-bG-s9p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UXT-e0-urE"/>
+                <constraint firstItem="8Ld-J3-gYQ" firstAttribute="trailing" secondItem="7Ot-mO-ZsU" secondAttribute="leading" constant="-12" id="dYM-CU-ZJd"/>
+                <constraint firstItem="Rtt-Om-6ab" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hmI-ec-jly"/>
+                <constraint firstItem="8Ld-J3-gYQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pA7-CR-Jb3"/>
+                <constraint firstItem="Rtt-Om-6ab" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="vP2-3z-ZR2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-14" y="46"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Roche_logo" width="1220" height="976"/>
+        <image name="icon_btn_bookmark_default" width="14" height="18"/>
+        <image name="icon_btn_menu_default" width="28" height="28"/>
+        <image name="icon_btn_search_default" width="28" height="28"/>
+    </resources>
+</document>

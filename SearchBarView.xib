@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchBarView" customModule="practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar opaque="NO" contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5d-Lq-Wk8">
+                    <rect key="frame" x="0.0" y="0.0" width="323" height="44"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY9-mB-TIG">
+                    <rect key="frame" x="323" y="0.0" width="52" height="44"/>
+                    <state key="normal" title="取消"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="s5d-Lq-Wk8" secondAttribute="bottom" id="DZF-Sq-jBt"/>
+                <constraint firstItem="iY9-mB-TIG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FnG-hP-jv5"/>
+                <constraint firstItem="iY9-mB-TIG" firstAttribute="leading" secondItem="s5d-Lq-Wk8" secondAttribute="trailing" id="NY4-eX-Nx3"/>
+                <constraint firstAttribute="trailing" secondItem="s5d-Lq-Wk8" secondAttribute="trailing" constant="52" id="NcL-ze-cru"/>
+                <constraint firstAttribute="trailing" secondItem="iY9-mB-TIG" secondAttribute="trailing" id="bmb-Ol-xZU"/>
+                <constraint firstAttribute="bottom" secondItem="iY9-mB-TIG" secondAttribute="bottom" id="deE-yK-dcN"/>
+                <constraint firstItem="s5d-Lq-Wk8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="drn-yN-ZQD"/>
+                <constraint firstItem="s5d-Lq-Wk8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hxV-cI-Of8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancel" destination="iY9-mB-TIG" id="4ol-6R-ecF"/>
+                <outlet property="searchBar" destination="s5d-Lq-Wk8" id="CF6-Lu-jbS"/>
+            </connections>
+            <point key="canvasLocation" x="-3.5" y="62"/>
+        </view>
+    </objects>
+</document>
